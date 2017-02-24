@@ -31,6 +31,15 @@
 </head>
 
 <style>
+
+  #toTop{
+  	position: fixed;
+  	bottom: 10px;
+  	right: 10px;
+  	cursor: pointer;
+  	display: none;
+  }
+
   table {
     text-align: center;
   }
@@ -40,7 +49,7 @@
   }
 
   #img-left {
-    margin-top: 20px;
+    margin-top: -20px;
     float: left;
   }
 
@@ -48,11 +57,26 @@
     margin-top: 20px;
     float: right;
   }
+
+  #img-carousel {
+    width: 100px;
+    height: 500px;
+  }
+
+  #img-bergamo {
+    width: 200px;
+    height: 250px;
+  }
+
+  .table {
+    text-align: left;
+  }
+
 </style>
 
 <body>
-    <img id="img-left" class="img-responsive img-border img-left" src="img/logo.gif" alt="">
-    <img id="img-right" class="img-responsive img-border img-left" src="img/logo.gif" alt="">
+    <img id="img-left" class="img-responsive img-border img-left" src="" alt="">
+    <img id="img-right" class="img-responsive img-border img-left" src="" alt="">
     <div class="brand">Sociadade Esportiva Bérgamo</div>
     <div class="address-bar">Campo Largo | Paraná | Brasil</div>
 
@@ -123,13 +147,13 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active">
-                                <img class="img-responsive img-full" src="http://placehold.it/750x450" alt="">
+                                <img id="img-carousel" class="img-responsive img-full" src="img/bergamo2.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="http://placehold.it/750x450" alt="">
+                                <img id="img-carousel" class="img-responsive img-full" src="img/img.png" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="http://placehold.it/750x450" alt="">
+                                <img id="img-carousel" class="img-responsive img-full" src="img/img.png" alt="">
                             </div>
                         </div>
 
@@ -163,7 +187,7 @@
                         <strong>História</strong>
                     </h2>
                     <hr>
-                    <img class="img-responsive img-border img-left" src="img/logo.gif" alt="">
+                    <img id="img-bergamo" class="img-responsive img-border img-left" src="img/bergamo.jpg" alt="">
                     <hr class="visible-xs">
                     <p>SOCIEDADE ESPORTIVA BÉRGAMO (S.E.B.-ALL BLACKS-FUTEBOL) conhecido também como 'o time de Preto', este é o nome do nosso time de infância desde 1990 na cidade de Campo Largo, onde Felipe, Fabiano, Fred, Glênio, Gregory, Gabriel(Boy), Gabriel Munareto, Raul e o lendário Celsinho faziam parte.</p>
                     <p>Com jogos nos campinhos Arena Weber e Vô Jacyr contra o rival 'time do Lugarini' e tbém o Clássico contra os Chevas (Último jogo de infância do Bérgamo foi 25 a 0 nos Chevas). Mais tarde, Fabiano e Frederico Weber resgataram este time que foi fundado em 25 de Outubro de 2003 para a disputa da I Copa Arlindo de Castro.</p>
@@ -175,85 +199,67 @@
         <div class="row">
             <div class="box">
                     <hr>
-                    <h2 class="intro-text text-center">Amistosos de Infância -
-                        <strong>ano de 1990:</strong>
-                    </h2>
+                    <p class="text-center"><strong>ALL BLACKS BERGAMO</strong></br>
+                        Sociedade Esportiva Bérgamo - All Black - Futebol - Campo Largo - Fundação em 25/10/2003 e Desde 1990 </br>
+                         Torcida Organizada de amigos Bérgamo Pilsen - Futebol, Churrasco & Cerveja - Fundada em 25/01/2007</p>
                     <hr>
                     <table class="table table-striped">
                       <thead>
                         <tr>
                         <div class="col-md-3 col-sm-6">
-                          <th>Jogos</th>
+                          <th></th>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                          <th>Número</th>
+                          <th></th>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                          <th>Elenco: 1990</th>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                          <th>Patrocinador</th>
-                        </tr>
-                      </div>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Amistosos</td>
-                          <td>1</td>
-                          <td>Rau</td>
-                          <td>Dep. Estadual Acir Mezzadri</td>
+                          <td><strong>ANO DE EXISTÊNCIA:</strong></td>
+                          <td>1990</td>
                         </tr>
                         <tr>
-                          <td></td>
-                          <td>3</td>
-                          <td>Gabriel Boy</td>
-                          <td></td>
+                          <td><strong>FUNDADORES:</strong></td>
+                          <td>Frederico Bordes Weber & Fabiano Weber</td>
                         </tr>
                         <tr>
-                          <td>S.E.Bergamo <strong>7</strong> X <strong>6</strong> Lugarini Team</td>
-                          <td>4</td>
-                          <td>Fabiano</td>
-                          <td></td>
+                          <td><strong>FUNDAÇÃO:</strong></td>
+                          <td>25/10/2003</td>
                         </tr>
                         <tr>
-                          <td>Lugarini Team <strong>7</strong> X <strong>8</strong> S.E.Bergamo</td>
-                          <td>6</td>
-                          <td>Celsinho</td>
-                          <td></td>
+                          <td><strong>MASCOTE:</strong></td>
+                          <td>Pit Bull Black Nose - Chama-se Raça</td>
                         </tr>
                         <tr>
-                          <td>S.E.Bergamo <strong>7</strong> X <strong>8</strong> Lugarini Team</td>
-                          <td>7</td>
-                          <td>Gregory</td>
-                          <td></td>
+                          <td><strong>ESTÁDIO:</strong></td>
+                          <td>Durval Weber - ARENA WEBER</td>
                         </tr>
                         <tr>
-                          <td>S.E.Bergamo <strong>25</strong> X <strong>0</strong> Cheva F.C.</td>
-                          <td>9</td>
-                          <td>Felipe</td>
-                          <td></td>
+                          <td><strong>SEDE ADMINISTRATIVA:</strong></td>
+                          <td>Residência Weber (Frederico) - Rua Engenheiro Tourinho 1572 - Vila Solene - Campo Largo - PR</td>
                         </tr>
                         <tr>
+                          <td><strong>SEDE SOCIAL:</strong></td>
+                          <td>Sítio Weber (Marcelo) - São Luiz do Purunâ - Balsa Nova - PR</td>
+                        </tr>
+                        <tr>
+                          <td><strong>CENTRO DE TREINAMENTO:</strong></td>
+                          <td>Chácara 3 Irmãos (Tiago) - CT do São Caetano - São Caetano - Campo Largo - PR</td>
+                        </tr>
+                        <tr>
+                          <td><strong>PATROCINADORES:</strong></td>
+                          <td>Centro de Natação & Fitness Acquarium</td>
                           <td></td>
-                          <td>10</td>
-                          <td>Glênio</td>
                           <td></td>
                         </tr>
                         <tr>
+                          <td><strong>GRITO DE GUERRA:</strong></td>
+                          <td>UM POR TODOS, TODOS POR UM, UM POR TODOS, TODOS POR UM...BÉRGAMO</td>
                           <td></td>
-                          <td>11</td>
-                          <td>Fred</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td>12</td>
-                          <td>Gabriel Munareto</td>
                           <td></td>
                         </tr>
                       </tbody>
                     </table>
-
 
                 </div>
             </div>
@@ -284,6 +290,22 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+
+    $(document).ready(function(){
+      $('body').append('<div id="toTop" class="btn btn-success"><span class="glyphicon glyphicon-chevron-up"></span> Voltar ao topo</div>');
+    	$(window).scroll(function () {
+			if ($(this).scrollTop() != 0) {
+				$('#toTop').fadeIn();
+			} else {
+				$('#toTop').fadeOut();
+			}
+		});
+    $('#toTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+      });
+    });
+
     </script>
 
 </body>
