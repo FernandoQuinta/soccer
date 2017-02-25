@@ -56,6 +56,14 @@ body {
 
     z-index:1032;
 }
+
+#toTop{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+}
 </style>
 
 <body>
@@ -227,9 +235,21 @@ body {
 
     <!-- Script to Activate the Carousel -->
     <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
+
+    $(document).ready(function(){
+      $('body').append('<div id="toTop" class="btn btn-success"><span class="glyphicon glyphicon-chevron-up"></span> Voltar ao topo</div>');
+    	$(window).scroll(function () {
+			if ($(this).scrollTop() != 0) {
+				$('#toTop').fadeIn();
+			} else {
+				$('#toTop').fadeOut();
+			}
+		});
+    $('#toTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+      });
+    });
 
     $(document).ready(function() {
         var $lightbox = $('#lightbox');
